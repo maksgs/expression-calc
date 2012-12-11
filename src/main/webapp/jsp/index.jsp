@@ -16,20 +16,21 @@
     <a href="configuration.html" >Configure project</a>
     <a href="#">${userName}</a>
 </div>
-	<div>
+	<div class="calculation">
 		<h1>Calculate your expression:</h1>
 		<input type="hidden" id="clearInput" value="${clearInputAfterCalculation}" />
 		<p><input id="expInput" type="text" name="expression" max_length="${expressionLength}" size="100" /></p>
 		<p><button onclick="calculateExpression();" >Calculate</button></p>
 	</div>
-	<div>
+	<div class="history">
+        <h3>History:</h3>
 		<p>Show: <select id="historyResults">
 			   <option value="0">Only Incorrect Expressions</option>
 			   <option value="1">Only Valid Expressions</option>
 			   <option value="2" selected>ALL</option>
 	 		</select>
 	 	</p>
-		<table id="table-history" style="border:1px solid blue;width:400px;text-align:center;">
+		<table id="table-history" >
 			<tbody />  
 		</table>
 	</div>

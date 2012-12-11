@@ -29,8 +29,10 @@ public class UserController
     }
 
     @RequestMapping(value = "/newuser", method = RequestMethod.POST)
-    public String addUser(  @Valid User user,
+    public String addUser(   User user,
                             BindingResult result){
+        RegistrarionValidator rv = new RegistrarionValidator();
+        rv.validate(user,result);
         if(result.hasErrors()){
             return "registration";
         }
@@ -46,17 +48,4 @@ public class UserController
         }
     }
 
-
-
-//    @InitBinder
-//    public void initBinder(WebDataBinder dataBinder) {
-//
-//        dataBinder.setDisallowedFields(new String[] {"id","date","enabled","role"});
-//
-//        dataBinder.setRequiredFields(new String[] {"name", "password", "confirmPassword"});
-//
-//        dataBinder.registerCustomEditor(String.class, new StringTrimmerEditor(false));
-//
-//        ;
-//    }
 }

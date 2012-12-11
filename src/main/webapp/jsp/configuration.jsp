@@ -31,7 +31,7 @@
 		   <option value="200">200</option>
  		</select>
  	</p>
- 	<p>Number of History rows	<select id="historyLength">
+ 	<p>Number of History rows:	<select id="historyLength">
 		   <option value="20">20</option>
 		   <option value="50">50</option>
 		   <option value="100">100</option>
@@ -62,6 +62,6 @@
  	<p><input type="button" onclick="saveConfiguration();" value="Save"></p>
 	</div>
 	<div id="save-result"></div>
-	<div><a href="index.html" >Back to Main Page</a></div>
+	<div class="back"><a href="index.html" >Back to Main Page</a></div>
 </body>
 </html>

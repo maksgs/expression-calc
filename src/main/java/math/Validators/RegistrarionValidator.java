@@ -18,8 +18,8 @@ public class RegistrarionValidator implements Validator
     @Override
     public void validate(Object target, Errors errors)
     {
-        ValidationUtils.rejectIfEmptyOrWhitespace(errors, "name", "required.name");
-        ValidationUtils.rejectIfEmpty(errors,"password","required.password");
+//        ValidationUtils.rejectIfEmptyOrWhitespace(errors, "name", "required.name");
+//        ValidationUtils.rejectIfEmpty(errors,"password","required.password");
         ValidationUtils.rejectIfEmpty(errors,"confirmPassword","required.confirmPassword");
 
         User user = (User) target;

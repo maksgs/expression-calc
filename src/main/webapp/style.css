@@ -2,13 +2,13 @@
 {
     height: 20px;
     width: 100%;
+    position: relative;
     border: 1px solid #906090;
     border-radius: 5px;
 }
 .mainMenu a
 {
     float: right;
-    /*margin-left: 10px;*/
     display: inline;
     margin-left: 5px;
     margin-right: 5px;
@@ -47,15 +47,89 @@
 
 .confBody
 {
+    padding: 15px;
     border: 1px solid black;
     width: 600px;
     top:50%;
     left:50%;
     position: absolute;
-    margin: -210px 0 0 -300px;
-    height: 420px;
+    margin: -225px 0 0 -315px;
+    height: 550px;
 }
 .confBody a
 {
  margin-bottom: 5px;
 }
+.confBody .back
+{
+    font-size: 15;
+    display: inline-block;
+}
+.registerWraper
+{
+    position: absolute;
+    border: 1px solid #000000;
+    width: 650px;
+    height: 260px;
+    margin: -130px 0 0 -325px;
+    top: 50%;
+    left: 50%;
+}
+.registerWraper h2
+{
+    text-align: center;
+}
+.registerWraper h6
+{
+    display: inline;
+}
+.registerWraper p{
+    display: inline;
+}
+.registerWraper .required
+{
+    color: red;
+    display:   inline;
+}
+.error
+{
+    color: #000;
+    background-color: #ffEEEE;
+    border: 2px solid #ff0000;
+    padding: 5px;
+    text-align: center;
+}
+.registerWraper table tr td
+{
+   padding: 10px;
+}
+.history
+{
+    padding: 15px;
+    width: 610px;
+    left: 50%;
+    position: relative;
+    margin: 0 0 0 -305px;
+}
+.history #table-history
+{
+    border: 1px solid #b22222;
+    width:400px;
+    text-align:center;
+    border-collapse: collapse;
+}
+.history #table-history .historyHead
+{
+    border: 1px solid #b22222;
+}
+.history #table-history td{
+    border: 1px solid #b22222;
+}
+.calculation
+{
+    width: 610px;
+    left: 50%;
+    position: relative;
+    margin: 0 0 0 -305px;
+}
+
